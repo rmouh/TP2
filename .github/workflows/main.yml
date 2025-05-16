@@ -28,10 +28,9 @@ jobs:
 
       - name: Run SonarCloud analysis
         run: |
-          cd simple-api
           mvn -B verify sonar:sonar \
-            -Dsonar.projectKey=LynaMahdi_TP-Github \
-            -Dsonar.organization=lynamahdi \
+            -Dsonar.projectKey=tp-devops-2025-rania-mouhoubi \
+            -Dsonar.organization=devops2025 \
             -Dsonar.host.url=https://sonarcloud.io \
             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
 
