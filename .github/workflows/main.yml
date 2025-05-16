@@ -27,11 +27,11 @@ jobs:
       - name: SonarCloud Scan
         run: |
           mvn -B verify sonar:sonar \
-          -Dsonar.projectKey=<your-project-key> \
-          -Dsonar.organization=<your-organization> \
-          -Dsonar.host.url=https://sonarcloud.io \
-          -Dsonar.login=${{ secrets.SONAR_TOKEN }} \
-          --file ./simple-api/pom.xml
+            -Dsonar.projectKey=tp-devops-2025-rania-mouhoubi \  # ← Remplace par ton vrai project key
+            -Dsonar.organization=devops2025 \                   # ← Remplace par ton vrai organisation key
+            -Dsonar.host.url=https://sonarcloud.io \
+            -Dsonar.login=${{ secrets.SONAR_TOKEN }} \
+            --file ./simple-api/pom.xml
 
   build-and-push-docker-images:
     needs: test-backend
