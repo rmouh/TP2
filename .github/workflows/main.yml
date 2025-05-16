@@ -27,4 +27,5 @@ jobs:
 
       # Étape 3 : Compiler et tester avec Maven
       - name: Build and test with Maven
-        run: mvn clean verify
+        run: mvnd clean verify
+--file simple-api/pom.xml
