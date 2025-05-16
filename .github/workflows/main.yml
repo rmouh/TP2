@@ -22,6 +22,9 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
 
+      - name: List files for debug
+        run: ls -R
+
       - name: Build and test with Maven
         run: |
           cd simple-api
