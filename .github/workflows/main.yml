@@ -34,7 +34,7 @@ jobs:
           cd simple-api
           mvn -B verify sonar:sonar \
           -Dsonar.projectKey=rmouh_TP2 \
-          -Dsonar.organization=rania \
+          -Dsonar.organization=rmouh \
           -Dsonar.host.url=https://sonarcloud.io \
           -Dsonar.login=${{ secrets.SONAR_TOKEN }}
 
